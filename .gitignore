@@ -1,0 +1,18 @@
+# Flutter (task_manager_app)
+task_manager_app/.dart_tool/
+task_manager_app/.packages
+task_manager_app/build/
+task_manager_app/.flutter-plugins
+task_manager_app/.flutter-plugins-dependencies
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node / npm
+package-lock.json

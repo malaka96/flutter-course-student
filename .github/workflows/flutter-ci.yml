@@ -1,0 +1,42 @@
+# Flutter CI – runs on every push and pull request to main
+# Used in this course to demonstrate GitHub Actions and automated testing.
+
+name: Flutter CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Get dependencies
+        working-directory: task_manager_app
+        run: flutter pub get
+
+      - name: Analyze code
+        working-directory: task_manager_app
+        run: flutter analyze
+
+      - name: Run tests
+        working-directory: task_manager_app
+        run: flutter test
+
+      - name: Build app
+        working-directory: task_manager_app
+        run: flutter build apk --debug
