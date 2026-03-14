@@ -5,6 +5,12 @@
 This guide helps students implement features for the **Student Management System App**.  
 If you get stuck, follow the guidelines below.
 
+**Week 2 reference notes (in this folder):**
+
+- **INTRODUCTION_TO_DART.md** – Dart basics (variables, types, functions, classes, `const`) – do this first.
+- **NAVIGATOR_NOTES.md** – Navigation: stack, push, pop, and wiring in `main.dart`.
+- **SCAFFOLD_AND_WIDGETS_NOTES.md** – Scaffold parameters, `child` vs `children`, layout pattern.
+
 ---
 
 ## 1. Basic Flutter Project Structure
