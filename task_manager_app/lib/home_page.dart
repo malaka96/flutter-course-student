@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'student_registration_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,6 +31,22 @@ class HomePage extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context).colorScheme.onSurfaceVariant,
                   ),
+            ),
+
+             const SizedBox(height: 30),
+
+            // Student Registration Button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const StudentRegistrationScreen(),
+                  ),
+                );
+              },
+              child: const Text('Student Registration form'),
             ),
           ],
         ),
