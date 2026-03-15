@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                   ),
                 );
               },
-              child: const Text('Student Registration'),
+              child: const Text('Student Registration form'),
             ),
           ],
         ),
