@@ -7,7 +7,7 @@
 // 4. Optionally interact: tester.tap(), tester.enterText(), then pump()
 
 import 'package:flutter_test/flutter_test.dart';
-
+import 'package:flutter/material.dart';
 import 'package:task_manager_app/main.dart';
 
 void main() {
@@ -20,7 +20,10 @@ void main() {
 
     // Body text from HomePage.
     expect(find.text('Welcome to Task Manager'), findsOneWidget);
+
     expect(find.textContaining('Week 2'), findsOneWidget);
+
+    expect(find.byIcon(Icons.check_circle_outline), findsOneWidget);
 
     // Other useful matchers: findsNothing, findsWidgets, findsNWidgets(2)
   });
