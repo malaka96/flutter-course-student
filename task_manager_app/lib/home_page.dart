@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Task Manager'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        actions: [IconButton(onPressed: (){}, icon: const Icon(Icons.add))],
       ),
       body: Center(
         child: Column(
