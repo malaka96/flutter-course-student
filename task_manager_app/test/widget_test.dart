@@ -27,6 +27,8 @@ void main() {
 
     expect(find.byType(Text), findsAtLeastNWidgets(2));
 
+    expect(find.byType(Scaffold), findsOneWidget);
+
     // Other useful matchers: findsNothing, findsWidgets, findsNWidgets(2)
   });
 }
