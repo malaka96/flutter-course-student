@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Task Manager'),
+        title: const Text('Task Manager – Group 5'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         actions: [IconButton(onPressed: (){}, icon: const Icon(Icons.add))],
       ),
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Week 2 – Your first Flutter app',
+              'Week 2 – Group 2',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context).colorScheme.onSurfaceVariant,
                   ),

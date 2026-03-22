@@ -19,11 +19,13 @@ void main() {
     expect(find.textContaining('Week 2'), findsOneWidget); 
 
     // Body text from HomePage.
-    expect(find.text('Welcome to Task Manager'), findsOneWidget);
+    expect(find.text('Welcome to Group 1'), findsOneWidget);
 
     expect(find.textContaining('Week 2'), findsOneWidget);
 
     expect(find.byIcon(Icons.check_circle_outline), findsOneWidget);
+
+    expect(find.byType(Text), findsAtLeastNWidgets(2));
 
     // Other useful matchers: findsNothing, findsWidgets, findsNWidgets(2)
   });
